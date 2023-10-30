@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000; /* Set background color to black */
+    }
+
+    .logo-container {
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px; /* Adjust the size according to your logo */
+      height: auto;
+      animation: pulse 2s infinite;
+    }
+
+    .loading-text {
+      color: #fff; /* Set text color to white */
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+  <title>Watch Dogs Logo Animation</title>
+  <script>
+    // JavaScript to create the loading animation with moving dots
+    document.addEventListener('DOMContentLoaded', function () {
+      const loadingText = document.querySelector('.loading-text');
+
+      function animateDots() {
+        loadingText.innerHTML = 'Loading.';
+        setTimeout(() => {
+          loadingText.innerHTML = 'Loading..';
+          setTimeout(() => {
+            loadingText.innerHTML = 'Loading...';
+            setTimeout(() => {
+              animateDots();
+            }, 500);
+          }, 500);
+        }, 500);
+      }
+
+      animateDots();
+
+      // Redirect to another page after 5 seconds
+      setTimeout(function(){
+        window.location.href = 'main.html'; // Replace 'next_page.html' with the actual file name
+      }, 5000); // 5000 milliseconds = 5 seconds
+    });
+  </script>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="giphy.gif" alt="Watch Dogs Logo" class="logo">
+    <div class="loading-text"></div>
+  </div>
+</body>
+</html>
