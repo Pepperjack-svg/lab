@@ -43,6 +43,33 @@
 
     gtag('config', 'UA-169007209-3');
   </script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Disable right-click on the page
+        $(document).on('contextmenu', function() {
+          alert('Right-click is disabled on this page.');
+          return false;
+        });
+  
+        // Detect specific key combinations
+        $(document).on('keydown', function(e) {
+          // Check for Ctrl+Shift+I (Windows/Linux) or Command+Option+I (Mac)
+          if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+            alert('Developer tools are not allowed on this page.');
+            e.preventDefault();
+            return false;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+
       <style>
        
 
