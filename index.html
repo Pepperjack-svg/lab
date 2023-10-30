@@ -44,41 +44,58 @@
     </script>
   </head>
   <body>
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #000; /* Set background color to black */
-    }
-
-    .logo-container {
-      text-align: center;
-    }
-
-    .logo {
-      width: 200px; /* Adjust the size according to your logo */
-      height: auto;
-      animation: pulse 2s infinite;
-    }
-
-    .loading-text {
-      color: #fff; /* Set text color to white */
-      font-size: 1.5em;
-      margin-top: 20px;
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #000; /* Set background color to black */
       }
-      50% {
-        transform: scale(1.1);
+  
+      .logo-container {
+        text-align: center;
       }
-    }
-  </style>
+  
+      .logo {
+        width: 200px; /* Adjust the size according to your logo */
+        height: auto;
+        animation: pulse 2s infinite;
+      }
+  
+      .loading-text {
+        color: #fff; /* Set text color to white */
+        font-size: 1.5em;
+        margin-top: 20px;
+        position: relative;
+        animation: moveDots 3s infinite;
+      }
+  
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+  
+      @keyframes moveDots {
+        0% {
+          content: 'Loading';
+        }
+        33% {
+          content: 'Loading.';
+        }
+        66% {
+          content: 'Loading..';
+        }
+        100% {
+          content: 'Loading...';
+        }
+      }
+    </style>
   <title>Watch Dogs Logo Animation</title>
   <script>
     // JavaScript to create the loading animation with moving dots
@@ -103,7 +120,7 @@
       // Redirect to another page after 5 seconds
       setTimeout(function(){
         window.location.href = 'main.html'; // Replace 'next_page.html' with the actual file name
-      }, 5000); // 5000 milliseconds = 5 seconds
+      }, 2000); // 5000 milliseconds = 5 seconds
     });
   </script>
 </head>
