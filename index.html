@@ -3,6 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+      /* Add a class to visually hide the context menu */
+      .disable-context-menu::after {
+        content: 'Right-click is disabled on this page.';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        line-height: 2;
+        font-size: 18px;
+        color: #333;
+        z-index: 9999;
+        pointer-events: none; /* Allow interaction with elements behind the overlay */
+      }
+    </style>
+    <script>
+      $(document).ready(function() {
+        // Listen for right-click events
+        $(document).on('contextmenu', function(e) {
+          // Add the class to visually hide the context menu
+          $('body').addClass('disable-context-menu');
+          // Prevent the default context menu
+          e.preventDefault();
+        });
+  
+        // Listen for clicks to remove the visually hidden context menu
+        $(document).on('click', function() {
+          $('body').removeClass('disable-context-menu');
+        });
+      });
+    </script>
+  </head>
+  <body>
   <style>
     body {
       display: flex;
