@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>AIHT</title>
+  <title>Profile</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
   
@@ -114,22 +114,37 @@
   
           .topic {
               background-color: #ffffff00;
-              border: 1px solid #ddd;
+              /*border: 1px solid #ddd;
               border-radius: 8px;
-              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
               padding: 20px;
               margin: 10px 20px; /* Added margin for separation */
               text-align: center;
               transition: border 0.2s ease, box-shadow 0.2s ease; /* Shortened transition duration */
           }
+          .topic_events {
+            background-color: #ffffff00;
+            border: 1px solid #dddddd00;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 20px; /* Added margin for separation */
+            text-align: center;
+            transition: border 0.2s ease, box-shadow 0.2s ease; /* Shortened transition duration */
+          }
+          .topic_heading {
+              background-color: #ffffff00;
+              text-align: center;
+              
+          }
   
           .topic:hover {
-              border: 3px solid #3498db; /* Thicker border color on hover */
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(52, 152, 219, 0.7) inset; /* Inner glow effect on hover */
+            border: 3px solid #3498dba1; /* Thicker border color on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(30, 107, 159, 0.7) inset; /* Inner glow effect on hover */
           }
   
           h2 {
-              color: #1fde15;
+              color: #333;
           }
   
           p {
@@ -153,17 +168,183 @@
           .register-button:hover {
               background-color: #1ec923; /* Darker background color on hover */
           }
+          .heading {
+            color: #00ff00;
+
+          }
+          .para{
+            color:rgb(135, 134, 134);
+          }
+          .event {
+            background-color: #0ba2d900;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 20px; /* Added margin for separation */
+            text-align: center;
+            transition: border 0.2s ease, box-shadow 0.2s ease; /* Shortened transition duration */
+        }
+
+        .event:hover {
+            border: 3px solid #3498db00; /* Thicker border color on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(52, 152, 219, 0.7) inset; /* Inner glow effect on hover */
+        }
+      
+        #scrollUpBtn {
+            display: none;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            
+            border-radius: 4px;     
+}
+    
+        #scrimg {
+            height: 55px;
+            width: 55px;
+            bottom: 20px;
+            right: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            
+            border-radius: 4px;
+        }
+    
+          
+          
       </style>
   </head>
   <body>
   
       <!-- Class containing three separate topics -->
       <div class="topic">
-          <h2>TECHATHLON</h2>
-          <p></p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSff6z6BxjKv_8_mFk24M8HlJFFpqDmwrtBajziWLtaRqv2P6w/viewform" class="register-button">Register</a>
-      </div>
+        <h2 style="color:rgb(135, 134, 134);">TECHATHLON</h2>
+        <p style="color:rgb(135, 134, 134);">Date: November 3, 2023</p>
+        <p style="color:rgb(135, 134, 134);">Time: 10:00 AM - 12:00 PM</p>
+        <a href="https://docs.google.com/forms/d/1yZ1S-Ake-g3laIox3xrgy8p3lpKq2zAISrc9Z91uvFs/viewform?pli=1&pli=1&edit_requested=true" class="register-button">Register</a>
+    </div>
+
+    
+    <div class="interests container">
+      <div class="section-title">
+          <br>
+          <h2>Event Details</h2>
+        </div>
+  <body>
+    <div class="topic_events">
+      <h2 style="color:rgb(235, 224, 224);">TECHNICAL EVENTS</h2>
   
+  <div class="event">
+      <h2 class="heading">PSEUDO QUEST</h2>
+      
+      <p class="para">EVENT DISCRIPTION <br> LEVEL 1: MCQ QUIZ(TOTAL TIME :30 MINUTES).<br> LEVEL 2:8 PSEUDO CODE QUESTIONS (TOTAL TIME :45 MINUTES).</p>
+      
+      <a href="https://www.instagram.com/p/CzB66v-PfYy/?igshid=MzRlODBiNWFlZA==
+      " target="_blank">RULES</a>
+      <p class="para"></p>
+  </div>
+  
+  <div class="event">
+      <h2 class="heading">DOM NERDS<br>(WEB-DESIGN)</h2>
+        <p class="para">EVENT DISCRIPTION <br> WEB DESIGNING CHALLENGE</p>
+      
+      <a href="https://www.instagram.com/p/CzBL0bWvFZH/?igshid=MzRlODBiNWFlZA==
+      " target="_blank">RULES</a>
+  </div>
+  <div class="event">
+      <h2 class="heading">POSTER MAKING</h2>
+      <p class="para">EVENT DISCRIPTION <br> 1.TIME DURATION :45 MINUTES .<br> 2.SOFTWARE SHOULD BE USED ARE CANVA,LIBRE OFFICE,PAINT. </p>
+      <a href="https://www.instagram.com/p/CzA-mSwvqz_/?igshid=MzRlODBiNWFlZA==
+      " target="_blank">RULES</a>
+  </div>
+  <div class="event">
+      <h2 class="heading">FUTURE PROGRAMMER</h2>
+      <p class="para">EVENT DISCRIPTION <br> </p>
+        <a href="" target="_blank"> no RULES</a>
+  </div>
+  <div class="event">
+      <h2 class="heading">IDEA PRESENTTATION</h2>
+      <p class="para">EVENT DISCRIPTION <br> </p>
+      <a href="https://www.instagram.com/p/Cy_WDe2Pv0P/?igshid=MzRlODBiNWFlZA==" target="_blank">no RULES</a>
+  </div>
+  <div class="event">
+    <h2 class="heading">EXTEMPORE TALK</h2>
+    <p class="para">EVENT DISCRIPTION <br>READY TO UNLEASH YOUR TECH-TALK PROWESS?<br>JOIN 'EXTEMPORE TALK' <br>-WHERE YOU'LL DIVE INTO THE ART OF SPONTANEOUS AND<br>PREPARED TRCHNICAL SPEAKING.</p>
+    <a href="https://www.instagram.com/p/CzFq9n5vnLQ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">RULES</a>
+</div>
+<div class="event">
+  <h2 class="heading">SYNTAX MASTER</h2>
+  <p class="para">EVENT DISCRIPTION <br> </p>
+  <a href="https://www.instagram.com/p/Cy_WDe2Pv0P/?igshid=MzRlODBiNWFlZA==" target="_blank">no RULES</a>
+</div>
+
+
+</div>
+<!---                      Technical over                           -->
+<!---                      NON - Technical start                           -->
+
+<div class="topic_events">
+<h2 style="color:rgb(243, 236, 236);">NON-TECHNICAL EVENTS</h2>
+  
+  
+  
+  <div class="event">
+      <h2 class="heading">LASER MAZE</h2>
+      <p class="para">EVENT DISCRIPTION <br>ROUND 1:TO FIND THEIR WAY THROUGH HE LASER LIGHT TO REACH THE EXIT POINT .<br> ROUND 2:TO FIND A GIVEN OBJECT WITH IN 2 MINUTES AND RECH THE EXIT. </p>
+      
+      <a href="https://www.instagram.com/p/Cy_PBXlvTrC/?igshid=MzRlODBiNWFlZA==
+      " target="_blank">RULES</a>
+  </div>
+  <div class="event">
+      <h2 class="heading">CHESS</h2>
+      <p class="para">EVENT DISCRIPTION <br> NO.OF ROUNDS :5 <br> PAIRING MODE:SWISS SYSTEM(NO KNOCKOUT)<br>TIME CONTROL :10+5 SEC<br> TIR-BREAAK : BUCHHOLZ .</p>
+      <a href="https://www.instagram.com/p/CzDEQMdPW0z/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==
+      " target="_blank">RULES</a>
+  </div>
+  
+  <div class="event">
+      <h2 class="heading">DRAWING BATTLE</h2>
+      <p class="para">EVENT DISCRIPTION <br> ROUND 1:PATTERN MATCHING. <br> ROUND 2:SCENARIO BASED DRAWING. </p>
+      
+      <a href="https://www.instagram.com/p/Cy_KsSnvSU-/?igshid=MzRlODBiNWFlZA==
+      " target="_blank">RULES</a>
+  </div>
+  
+  <div class="event">
+      <h2 class="heading">GUESS WHAT</h2>
+      <p class="para">EVENT DISCRIPTION <br> GUESS WHAT IS INSIDE THE BOX .</p>
+      
+      <a href="https://www.instagram.com/p/Cy_KaXjvmZO/?igshid=MzRlODBiNWFlZA==
+      " target="_blank">RULES</a>
+  </div>
+  
+  <div class="event">
+      <h2 class="heading">CINEMA QUEST</h2>
+      <p class="para">EVENT DISCRIPTION <br> ROUND 1: FIND THE "GOAT" IN 10 SECONDS .<br> ROUND 2:CONNECT THE CUDE AND MATCH THE FACES. </p>
+      
+      <a href="https://www.instagram.com/p/Cy_O1x_vpbc/?igshid=MzRlODBiNWFlZA==
+      " target="_blank">RULES</a>
+  </div>
+  <div class="event">
+      <h2 class="heading">MEMORY RELAY</h2>
+      <p class="para">EVENT DISCRIPTION <br>ROUND 1:FIGURE OUT THE STRUCTURE FRAMEWORK FOR PLACE,<br>CELEBRITY,CINEMATOGRAPHY,MOVIE SONGS AND MUCH MORE.<br> ROUND 2:LET WE SCREW YOUR MIND <br>LET YOU DIG YOUR MIND <br> GUESS THE RELATABLE FROM VISUALS </p>
+    
+    <a href="https://www.instagram.com/p/Cy_KisLPZDy/?igshid=MzRlODBiNWFlZA==
+    " target="_blank">RULES</a>
+  </div>
+      </div>
+      <div id="scrollUpBtn">
+        <img src="simpl.png" id="scrimg">
+        <button id="scrollUpBtn"></button>
+     </div>
+    </div>
+      
   
   </body>
   
@@ -188,6 +369,46 @@
       backSpeed: 65
     });
   </script>
+    <script>
+        const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+        window.addEventListener("scroll", () => {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        });
+
+        scrollUpBtn.addEventListener("click", () => {
+            scrollToTop(500); // 3000 milliseconds (3 seconds)
+        });
+
+        function scrollToTop(duration) {
+            const start = window.pageYOffset;
+            const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+            const easeInOutQuad = (t, b, c, d) => {
+                t /= d / 2;
+                if (t < 1) return (c / 2) * t * t + b;
+                t--;
+                return (-c / 2) * (t * (t - 2) - 1) + b;
+            };
+
+            function scroll() {
+                const currentTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+                const timeElapsed = currentTime - startTime;
+                const newPosition = easeInOutQuad(timeElapsed, start, -start, duration);
+                window.scrollTo(0, newPosition);
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(scroll);
+                } else {
+                    window.scrollTo(0, 0);
+                }
+            }
+
+            requestAnimationFrame(scroll);
+        }
+    </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
