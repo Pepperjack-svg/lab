@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>AIHT</title>
+  <title>Profile</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
   
@@ -32,6 +32,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/style-2.css" rel="stylesheet">
+  
+  
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -69,7 +71,10 @@
                 text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ff00;
             }
         }
+    
+        
     </style>
+
 </head>
 <video autoplay muted loop id="myVideo"><source src="assets/vendor/particles/Background.mp4" type="video/mp4"></video>
 <body>
@@ -102,68 +107,212 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Topic Class</title>
       <style>
-          body {
-              font-family: 'Arial', sans-serif;
-              background-color: #f4f4f400;
-              margin: 0;
-              padding: 0;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 100vh;
-          }
-  
-          .topic {
-              background-color: #ffffff00;
-              border: 1px solid #ddd;
-              border-radius: 8px;
-              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-              padding: 20px;
-              margin: 10px 20px; /* Added margin for separation */
-              text-align: center;
-              transition: border 0.2s ease, box-shadow 0.2s ease; /* Shortened transition duration */
-          }
-  
-          .topic:hover {
-              border: 3px solid #3498db; /* Thicker border color on hover */
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(52, 152, 219, 0.7) inset; /* Inner glow effect on hover */
-          }
-  
-          h2 {
-              color: #39da0c;
-          }
-  
-          p {
-              color: #666;
-          }
-  
-          .register-button {
-              display: inline-block;
-              padding: 10px 20px;
-              margin-top: 10px;
-              font-size: 16px;
-              background-color: #3498db;
-              color: #fff;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              text-decoration: none; /* Remove underline from anchor element */
-              transition: background-color 0.2s ease; /* Shortened transition duration */
-          }
-  
-          .register-button:hover {
-              background-color: #1ec923; /* Darker background color on hover */
-          }
-      </style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f400;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .topic {
+            background-color: #ffffff00;
+            border: 1px solid #dddddd00;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 20px; /* Added margin for separation */
+            text-align: center;
+            transition: border 0.2s ease, box-shadow 0.2s ease; /* Shortened transition duration */
+        }
+        .topic_events{
+            /*background-color: #ffffff00;
+            border: 1px solid #dddddd00;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;*/
+            margin: 10px 20px; /* Added margin for separation */
+            text-align: center;
+            /*transition: border 0.2s ease, box-shadow 0.2s ease; /* Shortened transition duration */
+        }
+
+        .topic:hover {
+            border: 3px solid #3498db00; /* Thicker border color on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(52, 152, 219, 0.7) inset; /* Inner glow effect on hover */
+        }
+
+        h2 {
+            color: #1fde15;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .register-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline from anchor element */
+            transition: background-color 0.2s ease; /* Shortened transition duration */
+        }
+
+        .register-button:hover {
+            background-color: #1ec923; /* Darker background color on hover */
+        }
+
+        .event {
+            background-color: #0ba2d900;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 20px; /* Added margin for separation */
+            text-align: center;
+            transition: border 0.2s ease, box-shadow 0.2s ease; /* Shortened transition duration */
+        }
+
+        .event:hover {
+            border: 3px solid #3498db00; /* Thicker border color on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(52, 152, 219, 0.7) inset; /* Inner glow effect on hover */
+        }
+        #scrollUpBtn {
+            display: none;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            
+            border-radius: 4px;     
+}
+   
+        #scrimg {
+            height: 55px;
+            width: 55px;
+            bottom: 20px;
+            right: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            
+            border-radius: 4px;
+        }
+    </style>
   </head>
   <body>
   
       <!-- Class containing three separate topics -->
       <div class="topic">
-          <h2>TECHNOKART</h2>
-          <p></p>
+          <h2>TECHNOKARTZ</h2>
+          <p>Date:November 4, 2023</p>
+          <p>Time: 10:00 AM - 12:00 PM</p>
+       
           <a href="https://docs.google.com/forms/d/1yZ1S-Ake-g3laIox3xrgy8p3lpKq2zAISrc9Z91uvFs/viewform?pli=1&pli=1&edit_requested=true" class="register-button">Register</a>
       </div>
+
+      <div class="interests container">
+
+        <div class="section-title">
+            <br>
+            <h2>Event Details</h2>
+          </div>
+    <body>
+        <div class="topic_events">
+            <h2 style="color:rgb(216, 209, 209);">TECHNICAL EVENTS</h2>
+        
+        <div class="event">
+            <h2>PA-PRE-TRIX</h2>
+            <p class="para">EVENT DISCRIPTION <br> MAX TIME:15 MINUTES<br>SLIDES (MIN: 10 MINUTES MAX: 15 MINUTES).</p>
+            <a href="https://www.instagram.com/p/CzDLXuEvcsE/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+        
+        <div class="event">
+            <h2>DOM MASTERS</h2>
+            <p class="para">.</p>
+            <a href="" target="_blank">Rules</a>
+        </div>
+        
+        <div class="event">
+            <h2>JUST A TERMINAL -WEB DEVELOPMENT</h2>
+            <p class="para">WEB DEVELOPMENT CHALLENGE</p>
+            <a href="https://www.instagram.com/p/CzBoC0cPs2i/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+        <div class="event">
+            <h2>CODING CHESS</h2>
+            <p class="para">EVENT DISCRIPTION <br>LEVEL 1:CONNECTION(TECHNICAL)  TOTAL TIME: 20 MINUTES<br>LEVEL 2:HUMAN CHESS(MEDIUM)  TOTAL TIME: 40 MINUTES<br>TEAM SIZE: 2 MEMBERS .</p>
+            <a href="https://www.instagram.com/p/CzDEQMdPW0z/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+        
+        <div class="event">
+            <h2>CODE DECODE</h2>
+            <p class="para">EVENT DISCRIPTION <br> ROUND 1:QUIZ TO SHARPEN YOUR EDGE.<br>ROUND 2:DIVE DEEP INTO THE CODE <br> AND UNVEIL HIDDEN SECRETS BY GUESSING THE PROGRAM BEHIND THE DOORS.</p>
+            <a href="" target="_blank">Rules</a>
+        </div>
+        
+        <div class="event">
+            <h2>RELAY CODE</h2>
+            <p class="para">EVENT DISCRIPTION <br> LEVEL 1:MCQ ROUND  TOTAL TIME: 20 MINUTES<br>LEVEL 2:CODING QUESTIONS  TOTAL TIME: 45 MINUTES<br>TEAM SIZE: MIN 2 MAX 4.</p>
+            <a href="https://www.instagram.com/p/CzB7JDRvCGO/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+    
+
+        </div>
+<!---                      Technical over                           -->
+<!---                      NON - Technical start                           -->
+
+<div class="topic_events">
+    <h2 style="color:rgb(223, 215, 216);">NON-TECHNICAL EVENTS</h2>
+        <div class="event">
+            <h2>XOX DART</h2>
+            <p class="para">EVENT DISCRIPTION <br> THE DART GAME .</p>
+            <a href="https://www.instagram.com/p/Cy_XhwEvuJf/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+        
+        <div class="event">
+            <h2>JIL JUNG JUCK</h2>
+            <p class="para">EVENT DISCRIPTION <br> JIL JUNG JUCK</p>
+            <a href="https://www.instagram.com/p/Cy_XF3VP5_r/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+        
+        <div class="event">
+            <h2>Free Fire</h2>
+            <p class="para">EVENT DISCRIPTION <br> BR MODE<br> CS MODE</p>
+            <a href="https://www.instagram.com/p/Cy_WDe2Pv0P/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+        <div class="event">
+            <h2>BGMI</h2>
+            <p class="para">EVENT DISCRIPTION <br> BATTLE GROUND MOBILE INDIA.</p>
+            <a href="https://www.instagram.com/p/Cy_VRMGPGsn/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+        
+        <div class="event">
+            <h2>CONNECTION</h2>
+            <p class="para">.</p>
+            <a href="https://www.instagram.com/p/Cy_UvfPPYj6/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+        
+        <div class="event">
+            <h2>GULLY CIRCKET</h2>
+            <p class="para">EVENT DISCRIPTION <br> BAT-A PUDI <br>CUP-A ADI...!</p>
+            <a href="https://www.instagram.com/p/Cy_WyCZPeEC/?igshid=MzRlODBiNWFlZA" target="_blank">Rules</a>
+        </div>
+</div>
+ <div id="scrollUpBtn">
+    <img src="simpl.png" id="scrimg">
+    <button id="scrollUpBtn"></button>
+ </div>
   
   
   </body>
@@ -189,6 +338,47 @@
       backSpeed: 65
     });
   </script>
+    <script>
+        const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+        window.addEventListener("scroll", () => {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        });
+
+        scrollUpBtn.addEventListener("click", () => {
+            scrollToTop(500); // 3000 milliseconds (3 seconds)
+        });
+
+        function scrollToTop(duration) {
+            const start = window.pageYOffset;
+            const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+            const easeInOutQuad = (t, b, c, d) => {
+                t /= d / 2;
+                if (t < 1) return (c / 2) * t * t + b;
+                t--;
+                return (-c / 2) * (t * (t - 2) - 1) + b;
+            };
+
+            function scroll() {
+                const currentTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+                const timeElapsed = currentTime - startTime;
+                const newPosition = easeInOutQuad(timeElapsed, start, -start, duration);
+                window.scrollTo(0, newPosition);
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(scroll);
+                } else {
+                    window.scrollTo(0, 0);
+                }
+            }
+
+            requestAnimationFrame(scroll);
+        }
+    </script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
